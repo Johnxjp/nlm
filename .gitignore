@@ -1,0 +1,4 @@
+.idea
+embeddings
+*.ipynb_checkpoints
+logs

@@ -1,0 +1,25 @@
+{
+    "train_config": {
+        "output_directory": "logs/trained_models",
+        "epochs": 10,
+        "learning_rate": 1e-4,
+        "optimizer": "adam",
+        "batch_size": 32,
+        "seed": 1234,
+        "checkpoint_path": "logs/checkpoints"
+    },
+    "data_config": {
+        "training_files":"data/interim/book_1.txt",
+        "validation_split": 0.2,
+        "split_seed": 50,
+        "maxlen": 50,
+        "vocab_size": 20000,
+        "word2id_file": "embeddings/word2id_20000.p",
+        "embedding_file": "embeddings/embedding_matrix_20000.p"
+    },
+    "nlm": {
+        "hidden_dims": 100,
+        "embedding_dims": 300,
+        "dropout": 0
+    }
+}
